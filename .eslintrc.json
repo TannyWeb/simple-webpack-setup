@@ -1,6 +1,10 @@
 {
-  "ignorePatterns": ["dist", "node_modules"],
+  "ignorePatterns": [
+    "dist",
+    "node_modules"
+  ],
   "rules": {
+    "import/prefer-default-export": 0,
     "max-len": [
       "error",
       {
@@ -9,8 +13,14 @@
       }
     ],
     "prefer-template": "off",
-    "indent": ["error", 2],
-    "object-curly-spacing": ["error", "always"],
+    "indent": [
+      "error",
+      2
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
     "no-multiple-empty-lines": [
       "error",
       {
@@ -19,10 +29,16 @@
       }
     ],
     "no-var": "error",
-    "one-var": ["error", "never"],
+    "one-var": [
+      "error",
+      "never"
+    ],
     "camelcase": "error",
     "no-multi-assign": "error",
-    "quotes": ["error", "single"],
+    "quotes": [
+      "error",
+      "single"
+    ],
     "no-array-constructor": "error",
     "no-new-object": "error",
     "no-new-wrappers": "error",
@@ -30,20 +46,37 @@
     "no-console": [
       "error",
       {
-        "allow": ["error"]
+        "allow": [
+          "error"
+        ]
       }
     ],
     "no-template-curly-in-string": "error",
     "no-self-compare": "error",
-    "func-names": ["error", "as-needed"],
-    "semi": [2, "never"],
-    "import/no-extraneous-dependencies": ["off", { "devDependencies": false }]
+    "func-names": [
+      "error",
+      "as-needed"
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "import/no-extraneous-dependencies": [
+      "off",
+      {
+        "devDependencies": false
+      }
+    ]
   },
   "env": {
     "browser": true,
     "es6": true
   },
-  "extends": ["eslint:recommended", "airbnb-base", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "airbnb-base",
+    "prettier"
+  ],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -52,6 +85,10 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["prettier"],
-  "settings": { "import/resolver": "webpack" }
+  "plugins": [
+    "prettier"
+  ],
+  "settings": {
+    "import/resolver": "webpack"
+  }
 }
